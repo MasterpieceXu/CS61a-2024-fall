@@ -64,15 +64,15 @@ def about(subject):
 
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
-    def pick(paragrahpy):
-        S1=remove_punctuation(paragrahpy)
-        s2=lower(S1)
-        s3=split(s2)
-        for i in range (0,len(s3)):
-            if s3[i] in subject:
+    def select(paragraph):
+        no_punc=remove_punctuation(paragraph)
+        lowered=lower(no_punc)
+        words=split(lowered)
+        for i in range (0,len(words)):
+            if words[i] in subject:
                 return True
         return False
-    return pick
+    return select
     # END PROBLEM 2
 
 
